@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "git@github.com:goccy/PhotoFilterProcessor.git", :tag => "0.0.1" }
   s.source_files = 'client/Library/*.{h,m}'
   s.requires_arc = true
-  s.dependency 'Cadenza', :git => 'https://github.com/goccy/Cadenza.git'
+  s.dependency 'Cadenza'
 
 end
