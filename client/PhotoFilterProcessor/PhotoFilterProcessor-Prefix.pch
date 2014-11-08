@@ -1,0 +1,21 @@
+//
+//  PhotoFilterProcessor-Prefix.pch
+//  PhotoFilterProcessor
+//
+//  Created by masaaki goshima on 2014/09/25.
+//  Copyright (c) 2014年 masaaki goshima. All rights reserved.
+//
+
+#ifndef PhotoFilterProcessor_PhotoFilterProcessor_Prefix_pch
+#define PhotoFilterProcessor_PhotoFilterProcessor_Prefix_pch
+
+#import "Cadenza.h"
+#import "UIColor+Extension.h"
+
+#define ENABLE_BASIC_AUTH 1
+#define SERVER_HOST_NAME @"localhost"
+#define SERVER_PORT      @"5000"
+#define BASIC_AUTH_USER  @"username"
+#define BASIC_AUTH_PASS  @"password"
+
+#endif

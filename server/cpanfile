@@ -1,0 +1,33 @@
+on 'build' => sub {
+    requires 'Class::Accessor::Fast';
+    requires 'JSON::XS';
+    requires 'YAML::XS';
+    requires 'IO::Socket::SSL';
+    requires 'LWP::Protocol::https';
+    requires 'File::Path';
+    requires 'File::Basename';
+    requires 'Data::Section::Simple';
+    requires 'Plack::Builder';
+    requires 'Plack::Runner';
+    requires 'Plack::Middleware::Auth::Basic';
+    requires 'Mojolicious';
+    requires 'Starman';
+    requires 'DBIx::Skinny';
+    requires 'DBD::mysql';
+    requires 'Cinnamon';
+    requires 'Net::OpenSSH';
+    requires 'Server::Starter';
+    requires 'Net::Server::SS::PreFork';
+    requires 'Text::Xslate';
+    requires 'Archive::Zip';
+    requires 'List::MoreUtils';
+    requires 'Jcode';
+    requires 'URI::Encode';
+    requires 'URI::Escape';
+};
+
+on 'test' => sub {
+    requires 'Test::More', '0.98';
+    requires 'Test::mysqld';
+    requires 'DBIx::FixtureLoader';
+};

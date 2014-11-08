@@ -1,0 +1,6 @@
+platform :ios, '7.0'
+
+pod 'Cadenza',      :git => 'https://github.com/goccy/Cadenza.git'
+pod 'SSZipArchive',  '~> 0.3.1', :inhibit_warnings => true
+pod 'SVProgressHUD', '~> 1.0',   :inhibit_warnings => true
+pod 'AFNetworking',  '~> 2.4.1', :inhibit_warnings => true

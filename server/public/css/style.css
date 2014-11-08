@@ -1,0 +1,59 @@
+body, html {
+    position: relative;
+    text-align: center;
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+    font-wight: bold;
+    min-width: 800px;
+}
+
+.table-key {
+    background-color: #1e90ff;
+}
+
+.error {
+    color: red;
+}
+
+.edit-cancel-button {
+    position: relative;
+    left: -100px;
+}
+
+#show_templates img {
+    width: 200px;
+}
+
+.table-view {
+    position: relative;
+    margin-top: 50px;
+    left:  25%;
+    width: 50%;
+}
+
+#download_button {
+    position: relative;
+    top: 20px;
+    left: 34%;
+}
+
+#delete_button {
+    position: relative;
+    top: 20px;
+    left: 35%;
+}
+
+#filter_table {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    margin-top: 50px;
+}
+
+#filter_table * {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#filter_table img {
+    width: 200px;
+}

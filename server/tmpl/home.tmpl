@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/lib/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+    <script src="js/lib/ui-bootstrap-tpls-0.11.0.min.js"></script>
+    <script type="text/javascript" src="js/controller/app.js"></script>
+  </head>
+  <body ng-app="PhotoFilterProcessor">
+    <div id="header">
+      <h3>PhotoFilterProcessor</h3>
+    </div>
+    <div ng-controller="FilterController">
+      <button id="download_button" class="btn btn-primary" ng-click="download()">Download</button>
+      <button id="delete_button"   class="btn btn-danger"  ng-click="remove()">Delete</button>
+      <table id="filter_table" class="table table-bordered table-striped table-condensed">
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>thumbnail</th>
+            <th>json</th>
+            <th>delete</th>
+            <th>download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="filter in filters">
+            <td>{{filter.name}}</td>
+            <td>
+              <a href="{{filter.thumbnail}}">
+                <img class="img-thumbnail" ng-src="{{filter.thumbnail}}"></img>
+              </a>
+            </td>
+            <td>{{filter.json}}</td>
+            <td><input type="checkbox" ng-model="filter.can_remove"></input></td>
+            <td><input type="checkbox" ng-model="filter.can_download"></input></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

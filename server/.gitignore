@@ -1,0 +1,5 @@
+local
+log
+.xslate_cache
+public/docs/*-filter
+*.zip

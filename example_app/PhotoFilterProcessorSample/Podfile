@@ -1,0 +1,3 @@
+platform :ios, '7.0'
+
+pod 'PhotoFilterProcessor', :git => 'https://github.com/goccy/PhotoFilterProcessor.git'
