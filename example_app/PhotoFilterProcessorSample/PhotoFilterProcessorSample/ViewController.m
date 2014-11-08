@@ -22,7 +22,6 @@
     UIImage *originalImage = [UIImage imageNamed:@"original.png"];
     UIImage *filteredImage = [[[PhotoFilterProcessor alloc] init] filterWithName:@"sample" withInputImage:originalImage];
     self.imageView.image   = filteredImage;
-    [[PhotoFilterProcessor alloc] filterNames];
 }
 
 - (void)didReceiveMemoryWarning {

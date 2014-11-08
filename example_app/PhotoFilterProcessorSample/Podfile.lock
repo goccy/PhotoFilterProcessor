@@ -1,0 +1,17 @@
+PODS:
+  - Cadenza (0.1.0)
+  - PhotoFilterProcessor (0.0.1):
+    - Cadenza
+
+DEPENDENCIES:
+  - PhotoFilterProcessor (from `https://github.com/goccy/PhotoFilterProcessor.git`)
+
+EXTERNAL SOURCES:
+  PhotoFilterProcessor:
+    :git: https://github.com/goccy/PhotoFilterProcessor.git
+
+SPEC CHECKSUMS:
+  Cadenza: 1426201240b2fd4e06f08b35fe18e66cffac6bd9
+  PhotoFilterProcessor: c2f9da352e9b302e810514005d7ae4911f7ccc55
+
+COCOAPODS: 0.34.4
